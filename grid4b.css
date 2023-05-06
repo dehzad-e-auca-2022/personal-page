@@ -1,0 +1,297 @@
+@font-face {font-family:'Gotham';src: url('https://html.ink.kg/fonts/gothampro_bold.ttf')}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://cdn.imgchest.com/files/pyvdcd2lnyk.png);
+    background-repeat: no-repeat;
+    max-width: 1247px;
+    min-height: 1959px;
+    font-size: 2rem;
+    opacity: .5;    
+    color: blue;
+    font-family: Gotham;
+}
+
+body > img:nth-of-type(1) {
+    display: none;
+}
+
+body {
+    background-image: none;
+    opacity: 1;
+}
+   
+body {
+    background-image: none;
+    opacity: 1;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: minmax(112px, auto) minmax(67px, auto) minmax(49px, auto) minmax(130px, auto) minmax(400px, auto);
+    grid-template-columns: minmax(20px, 99px) minmax(20px,112px) minmax(20px, 454px) minmax(20px,578px);
+    grid-template-areas:
+    "one one seven eight"
+    "two two three three"
+    "nine nine three three"
+    "four four five five"
+    "four four six six"
+    "four four six six";
+}
+
+.container > * {
+    border: 2px dashed blue;
+}
+
+.box1 {
+    grid-area: one;
+}
+.box2 {
+    grid-area: two;
+    background-color: #e7315d;
+    padding: 25px;
+    border-bottom: 1px solid white;
+}
+.box3 {
+    grid-area: three;
+    background-image: url(https://cdn.redmondpie.com/wp-content/uploads/2022/06/iPhone-14-concept.jpg);
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-blend-mode: multiply;
+    background-color: gray;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: .8em;
+    color: white;
+}
+.box4 {
+    grid-area: four;
+}
+.box5 {
+    grid-area: five;
+}
+.box6 {
+    grid-area: six;
+}
+.box7 {
+    grid-area: seven;
+}
+.box8 {
+    grid-area: eight;
+}
+.box9 {
+    grid-area: nine;
+    background-color: #2f363d;
+}
+
+.box9 ul {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    list-style-type: none;
+    font-family: Gotham;
+    flex-wrap: wrap;
+}
+
+.box9 li {
+    padding: 25px;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+}
+
+.box2 {
+    display: flex;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    list-style-type: none;
+    font-family: Gotham;
+    text-transform: uppercase;
+}
+
+.box1 img {
+    margin-top: 13px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+    
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight"
+        "nine";
+    }
+}
+
+.brand-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    height: 59px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 37px;
+}
+
+.brand-container img {
+    height: 40px;
+}
+
+/*New*/
+.new h2 {
+    background-color: #9b2141;
+    height: 100%;
+    color: white;
+    font-size: 30px;
+    padding-top: 27px;
+    padding-left: 23px;
+    
+}
+
+/* Box6 */
+.prod1 {
+    grid-area: p1;
+}
+.prod2 {
+    grid-area: p2;
+}
+.prod3 {
+    grid-area: p3;
+}
+.prod4 {
+    grid-area: p4;
+}
+.prod5 {
+    grid-area: p5;
+}
+.prod6 {
+    grid-area: p6;
+}
+.prod7 {
+    grid-area: p7;
+}
+.prod8 {
+    grid-area: p8;
+}
+.new {
+    grid-area: new;
+}
+
+.box6 {
+    display: grid;
+    gap: 20px;
+    padding-left: 24px;
+    grid-template-rows: minmax(94px, auto) minmax(400px, auto) minmax(400px, auto);
+    grid-template-columns: 230px 230px 230px 230px;
+    grid-template-areas: 
+    "new new new new"
+    "p1 p2 p3 p4"
+    "p5 p6 p7 p8"; 
+}
+
+.box6 > * {
+    border: 1px solid lightgrey;
+}
+
+.credit {
+    background-color: #991111;
+    height: 27px;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    padding-right: 2px;
+
+}
+
+.image img{
+    height: 160px;
+    padding-top: 20px;
+    margin: auto;
+    display: block;
+}
+
+.box6 .name {
+    color: rgb(47, 54, 61);
+    font-size: 18px;
+    padding-top: 36px;
+    padding-right: 2px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.box6 p {
+    color: rgb(47, 54, 61);
+    font-size: 14px;
+    text-align: center;
+    font-family: Gotham;
+    margin: 3.9px 0px 0px -3px;
+}
+
+.radio {
+    display: flex;
+    gap: 3.2px;
+    justify-content: center;
+}
+
+.inner-circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: black;
+    
+    position: relative;
+    margin: 1.5px 0px 0px 1.5px;
+}
+
+.outer-circle {
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-color: no-color;
+    border: 2px solid red;
+    margin-top: 27px;
+    margin-right: 2.5px;
+}
+
+.price {
+    font-size: 24px;
+    margin: 38px 0px 0px 24px;
+    color: black;
+    font-weight: bold;
+}
+
+.cart {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #991111;
+    position: relative;
+    left: 165px;
+    bottom: 33px;
+}
+
+.cart img {
+    height: 20px;
+    width: 20px;
+    margin: 0px 0px 0px 4px;
+}
