@@ -28,10 +28,6 @@ body {
     "six six six six";
 }
 
-.container > * {
-    border: 2px dashed blue;
-}
-
 .box1 {
     grid-area: one;
 }
