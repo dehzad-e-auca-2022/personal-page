@@ -1,0 +1,279 @@
+@font-face {font-family:'Gotham';src: url('https://html.ink.kg/fonts/gothampro_bold.ttf')}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(https://cdn.imgchest.com/files/pyvdcd2lnyk.png);
+    background-repeat: no-repeat;
+    max-width: 1247px;
+    min-height: 1959px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+    font-family: Gotham;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: minmax(112px, auto) minmax(67px, auto) minmax(49px, auto) minmax(438px, auto) minmax(154px, auto) minmax(1129px, auto);
+    grid-template-columns: minmax(20px, 99px) minmax(20px,112px) minmax(20px, 454px) minmax(20px,578px);
+    grid-template-areas:
+    "one one seven eight"
+    "two nine nine nine"
+    "three three three three"
+    "four four four four"
+    "five five five five"
+    "six six six six";
+}
+
+.container > * {
+    border: 2px dashed blue;
+}
+
+.box1 {
+    grid-area: one;
+}
+.box2 {
+    grid-area: two;
+    background-color: #e7315d;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    list-style-type: none;
+    padding-left: 18px;
+    padding-bottom: 3px;
+    flex-wrap: wrap;
+}
+.box3 {
+    grid-area: three;
+}
+.box4 {
+    grid-area: four;
+}
+.box5 {
+    grid-area: five;
+}
+.box6 {
+    grid-area: six;
+}
+.box7 {
+    grid-area: seven;
+}
+.box8 {
+    grid-area: eight;
+}
+.box9 {
+    grid-area: nine;
+    background-color: #2f363d;
+}
+.box10 {
+    display: none;
+}
+.box9 ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    list-style-type: none;
+    font-family: Gotham;
+    gap: 39.3px;
+    height: 100%;
+    padding-left: 18px;
+    padding-bottom: 3px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "one"
+        "two"
+        "nine"
+        "five"
+        "six"
+        "three"
+        "four"
+        "seven"
+        "eight";
+    }
+}
+
+.box1 img {
+    padding-top: 15px;
+}
+
+.brand-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    min-height: 89px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 37px;
+}
+  
+/* Box6 */
+.prod1 {
+    grid-area: p1;
+}
+.prod2 {
+    grid-area: p2;
+}
+.prod3 {
+    grid-area: p3;
+}
+.prod4 {
+    grid-area: p4;
+}
+.prod5 {
+    grid-area: p5;
+}
+.prod6 {
+    grid-area: p6;
+}
+.prod7 {
+    grid-area: p7;
+}
+.prod8 {
+    grid-area: p8;
+}
+.new {
+    grid-area: new;
+}
+.new h2 {
+    background-color: #9b2141;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    color: white;
+    font-size: 32.5px;
+    font-weight: 300;
+    padding-left: 23px;
+    font-family: arial;
+    padding-bottom: 3px;
+}
+.box6 {
+    display: grid;
+    grid-template-rows: minmax(94px, auto) minmax(522px, auto) minmax(508px, auto);
+    grid-template-columns: minmax(20px, 310px) minmax(20px, 310px) minmax(20px, 310px) minmax(20px, 310px);
+    grid-template-areas: 
+    "new new new new"
+    "p1 p2 p3 p4"
+    "p5 p6 p7 p8";
+}
+
+.border {
+    border-right: 1px solid lightgrey;
+}
+
+.credit {
+    background-color: #991111;
+    min-height: 27px;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    padding-right: 2px;
+}
+
+.no-credit {
+    background-color: white;
+    height: 27px;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    padding-right: 2px;
+    border-top: 1px solid lightgrey;;
+}
+
+.image img{
+    width: 57.5%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.box6 .name {
+    color: rgb(47, 54, 61);
+    font-size: 18px;
+    padding-top: 37px;
+    padding-right: 2px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.box6 p {
+    color: rgb(47, 54, 61);
+    font-size: 14px;
+    text-align: center;
+    font-family: Gotham;
+    margin: 5px 0px 0px -1px;
+}
+
+.radio {
+    display: flex;
+    gap: 3.2px;
+    justify-content: center;
+}
+
+.inner-circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: black;
+    
+    position: relative;
+    margin: 1.5px 0px 0px 1.5px;
+}
+
+.outer-circle {
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-color: no-color;
+    border: 2px solid red;
+    margin-top: 27px;
+    margin-right: 2px;
+}
+
+.price {
+    font-size: 24px;
+    margin: 43px 0px 0px 25px;
+    color: black;
+    font-weight: bold;
+    float: left;
+}
+
+.cart {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-color: #991111;
+    float: right;
+    margin-top: 32px;
+    margin-right: 26px;
+}
+
+.cart img {
+    height: 30px;
+    width: 30px;
+    margin: 7px 0px 0px 6px;
+}
+
+.buttonMenu {
+    display: none;
+}
