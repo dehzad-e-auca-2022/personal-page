@@ -28,6 +28,10 @@ body {
     "six six six six";
 }
 
+.container > * {
+    border: 2px dashed blue;
+}
+
 .box1 {
     grid-area: one;
 }
@@ -58,17 +62,100 @@ body {
 }
 .box7 {
     grid-area: seven;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12.5px;
+    padding-left: 57px;
+    color: #9b2141;
 }
 .box8 {
     grid-area: eight;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    padding-left: 37px;
+    padding-top: 3px;
 }
 .box9 {
     grid-area: nine;
     background-color: #2f363d;
 }
 .box10 {
+    grid-area: ten;
     display: none;
 }
+
+.box3 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22.5px;
+    justify-content: start;
+    height: 100%;
+    align-items: center;
+    list-style-type: none;
+    font-size:14px;
+    color:#2f363d;
+    font-weight: 300;
+    padding-left: 23px;
+    padding-top: 5px;
+}
+
+.logo1 img{
+    width: 50px;
+    padding-top: 10px;
+}
+.logo2 img{
+    width: 50px;
+    padding-top: 10px;
+}
+
+.small {
+    font-size: 12px;
+    line-height: 14px;
+    padding-top: 5px;
+}
+
+.big {
+    font-size: 41px;
+}
+
+.searchbox {
+    width: 312px;
+    height: 50px;
+    border: gray solid 2px;
+    border-radius: 31px;
+}
+
+.searchbox img {
+    width: 45px;
+    float: right;
+    padding-right: 12px;
+    padding-top: 7px;
+
+}
+.sta {
+    flex-basis: 70px;
+}
+.sta img {
+    width: 50px;
+    padding-top: 6px;
+}
+.cartt img {
+    width: 60px;
+    padding-top: 6px;
+}
+.person img {
+    width: 50px;
+    padding-top: 6px;
+}
+
+.box4 img {
+    width: 100%;
+    padding-top: 29px;
+}
+
 .box9 ul {
     display: flex;
     justify-content: start;
@@ -90,14 +177,15 @@ body {
         grid-template-columns: 100%;
         grid-template-areas:
         "one"
+        "seven"
+        "eight"
         "two"
         "nine"
-        "five"
-        "six"
         "three"
         "four"
-        "seven"
-        "eight";
+        "five"
+        "six"
+        "ten";
     }
 }
 
