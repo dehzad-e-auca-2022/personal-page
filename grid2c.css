@@ -175,6 +175,7 @@ body {
 @media (max-width: 500px) {
     .container {
         grid-template-columns: 100%;
+        grid-template-rows: initial;
         grid-template-areas:
         "one"
         "seven"
